@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <title>积分首页</title>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper.jquery.min.js"></script>
+    <script src="js/commen.js"></script>
+    <link rel="stylesheet" href="icon-font/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*重定义插件滑动插件swiper的样式*/
+        .swiper-pagination{
+            text-align: right;
+        }
+        .swiper-container-horizontal>.swiper-pagination-bullets{
+            bottom : 0;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #2cb3c6;
+            width:16px;
+            height: 6px;
+            margin-bottom: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius:2px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body style="background-color: #fafafa;">
+<a name="top"></a>
+<div id="contain">
+    <header id="layout-head">
+        <div>
+            积分首页
+        </div>
+        <div id="layout-headbtn">
+            <a href="html/shoppingcar.html">
+                <i class="icon iconfont icon-gouwuche"></i>
+            </a>
+        </div>
+    </header>
+
+    <div id="layout-content">
+        <section id="cb-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="images/banner1.jpg" alt="首页banner图1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="images/banner2.jpg" alt="首页banner图2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="images/banner3.jpg" alt="首页banner图3">
+                        </a>
+                    </div>
+                </div>
+                <!-- 分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <nav id="cb-nav">
+            <ul class="clear">
+                <li class="cb-nav-item">
+                    <a href="">
+                        <div class="cb-nav-circle nav-color1">
+                            <span class="icon iconfont icon-1"></span>
+                        </div>
+                        <p>个人护理</p>
+                    </a>
+                </li>
+                <li class="cb-nav-item">
+                    <a href="">
+                        <div class="cb-nav-circle nav-color2">
+                            <span class="icon iconfont icon-fuzhuang"></span>
+                        </div>
+                        <p>男女装</p>
+                    </a>
+                </li>
+                <li class="cb-nav-item">
+                    <a href="">
+                        <div class="cb-nav-circle nav-color3">
+                            <span class="icon iconfont icon-jiaju"></span>
+                        </div>
+                        <p>家居家装</p>
+                    </a>
+                </li>
+                <li class="cb-nav-item">
+                    <a href="">
+                        <div class="cb-nav-circle nav-color4">
+                            <span class="icon iconfont icon-muying2"></span>
+                        </div>
+                        <p>母婴</p>
+                    </a>
+                </li>
+                <li class="cb-nav-item">
+                    <a href="">
+                        <div class="cb-nav-circle nav-color5">
+                            <span class="icon iconfont icon-shipin"></span>
+                        </div>
+                        <p>食品</p>
+                    </a>
+                </li>
+                <li class="cb-nav-item">
+                    <a href="">
+                        <div class="cb-nav-circle nav-color6">
+                            <span class="icon iconfont icon-xiebao"></span>
+                        </div>
+                        <p>鞋包</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="cb-notice" class="clear">
+            <div class="cb-notice-tit">消息</div>
+            <ul id="cb-notice-list">
+                <li>
+                    <a href="">进口奢侈品,千元任你选</a>
+                </li>
+                <li>
+                    <a href="">百元大促销,只选你想要的</a>
+                </li>
+                <li>
+                    <a href="">母亲节大钜惠,给妈妈一个不一样的母亲节!</a>
+                </li>
+                <li>
+                    <a href="">母婴上新品</a>
+                </li>
+                <li>
+                    <a href="">脑洞打开,一个足球教练的传奇故事</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cb-content">
+            <div id="cbc-item1">
+                <div class="item-tit">
+                    <span>热销产品</span> <a class="linktomore" href="">更多</a>
+                </div>
+                <ul class="item-box clear">
+                    <li class="item p1">
+                        <div class="cb-p1img">
+                            <a href="">
+                                <img src="images/cb-p01.jpg" alt="【京东超市】所望 SOMANG 牛奶身体护理4件套（沐浴露750ml+身体乳500ml+沐浴身体50ml*2）">
+                            </a>
+                        </div>
+                        <div class="cb-p1text clear">
+                            <p class="product-tit">SOMANG 牛奶身体护理4件套</p>
+                            <div class="btn-box clear">
+                                <span>89分</span>
+                                <a href="">兑换</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item p2p3">
+                        <ul>
+                            <li class="p2 clear">
+                                <div class="cb-p2img">
+                                    <a href="">
+                                        <img src="images/cb-p02.jpg" alt="魅族（MEIZU） 魅蓝note5">
+                                    </a>
+                                </div>
+                                <div class="cb-p2text">
+                                    <a href="">
+                                        <p class="product-tit">魅族（MEIZU） 魅蓝note5</p>
+                                    </a>
+                                    <div class="btn-box">
+                                        <p class="clear"><span>1099分</span></p>
+                                        <p class="clear"><a href="">兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p3 clear">
+                                <div class="cb-p3img">
+                                    <a href="">
+                                        <img src="images/cb-p03.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="cb-p3text">
+                                    <p class="product-tit">知名品牌纯棉床上用品</p>
+                                    <div class="btn-box">
+                                        <p class="clear"><span>5000分</span></p>
+                                        <p class="clear"><a href="">兑换</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="cbc-item2">
+                <div class="item-tit">
+                    <span>优选清单</span> <a class="linktomore" href="">更多</a>
+                </div>
+                <ul class="item2ul clear">
+                    <li class="item">
+                        <a href="">
+                            <div class="cb-p4img">
+                                <img src="images/cb-p04.jpg" alt="BOLUMAS女包2017迷你新款小手提包日韩版单肩斜挎包女欧美小方包 红色">
+                            </div>
+                            <p class="product-tit">BOLUMAS女包2017迷你新款小手提包日韩版单肩斜挎包女欧美小方包 红色</p>
+                        </a>
+                        <div class="btn-box">
+                            <span>99分</span>
+                            <a href="">兑换</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="cb-p5img">
+                                <img src="images/cb-p05.jpg" alt="吉禾伊嘉棒球服外套女2017春装新款女装韩版修身甜美纯色夹克短外套女6319082 豆绿色 L-1">
+                            </div>
+                            <p class="product-tit">吉禾伊嘉棒球服外套女2017春装新款女装韩版修身甜美纯色夹克短外套女6319082 豆绿色 L-1</p>
+                        </a>
+                        <div class="btn-box">
+                            <span>118分</span>
+                            <a href="">兑换</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="cb-p6img">
+                                <img src="images/cb-p06.jpg" alt="【京东超市】洁柔（C&S）卷纸 卫生纸 蓝面子卷纸卫生纸140g（27卷装）">
+                            </div>
+                            <p class="product-tit">【京东超市】洁柔（C&S）卷纸 卫生纸 蓝面子卷纸卫生纸140g（27卷装）</p>
+                        </a>
+                        <div class="btn-box">
+                            <span>59分</span>
+                            <a href="">兑换</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="cb-p6img">
+                                <img src="images/cb-p04.jpg" alt="【京东超市】洁柔（C&S）卷纸 卫生纸 蓝面子卷纸卫生纸140g（27卷装）">
+                            </div>
+                            <p class="product-tit">【京东超市】洁柔（C&S）卷纸 卫生纸 蓝面子卷纸卫生纸140g（27卷装）</p>
+                        </a>
+                        <div class="btn-box">
+                            <span>59分</span>
+                            <a href="">兑换</a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="cb-p6img">
+                                <img src="images/cb-p04.jpg" alt="【京东超市】洁柔（C&S）卷纸 卫生纸 蓝面子卷纸卫生纸140g（27卷装）">
+                            </div>
+                            <p class="product-tit">【京东超市】洁柔（C&S）卷纸 卫生纸 蓝面子卷纸卫生纸140g（27卷装）</p>
+                        </a>
+                        <div class="btn-box">
+                            <span>5000分</span>
+                            <a href="">兑换</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="foot-info">
+                <div class="link">
+                    <table>
+                        <tr>
+                            <td>
+                                <a id="signin" href="">登陆</a>
+                            </td>
+                            <td>
+                                <a id="totop" href="#top">回到顶部</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="copyright">Copyright &copy; 2017 www.xxx.com版权</div>
+            </div>
+        </section>
+
+    </div>
+    <footer id="layout-foottab">
+        <ul class="clear">
+            <li class="active">
+                <a href="#">
+                    <span class="icon iconfont icon-icon"></span>
+                    <div>首页</div>
+                </a>
+            </li>
+            <li>
+                <a href="html/productlist.html">
+                    <span class="icon iconfont icon-gift1"></span>
+                    <div>积分商城</div>
+                </a>
+            </li>
+            <li>
+                <a href="html/record.html">
+                    <span class="icon iconfont icon-cloud-record"></span>
+                    <div>兑换记录</div>
+                </a>
+            </li>
+            <li>
+                <a href="html/usercenter.html">
+                    <span class="icon iconfont icon-person"></span>
+                    <div>个人中心</div>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+<script>
+    //首页banner
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        //三秒钟自动播放
+        autoplay: 3000
+    })
+</script>
+<script>
+    //滚动消息通知
+    $(function () {
+        //获得当前<ul>
+        var $uList = $("#cb-notice-list");
+        var timer = null;
+        //触摸清空定时器
+        $uList.hover(function () {
+            clearInterval(timer);
+        }, function () {//离开启动定时器
+            timer = setInterval(function () {
+                scrollList($uList);
+            }, 2000);
+        }).trigger("mouseleave"); //自动触发触摸事件
+        //滚动动画
+        function scrollList(obj) {
+            //获得当前<li>的高度
+            var scrollHeight = $(obj).height();
+            //滚动出一个<li>的高度
+            $uList.stop().animate({marginTop: -scrollHeight}, 600, function () {
+                //动画结束后，将当前<ul>marginTop置为初始值0状态，再将第一个<li>拼接到末尾。
+                $uList.css({marginTop: 0}).find("li:first").appendTo($uList);
+            });
+        }
+
+
+        //优选清单列表数据为基数时最后一个空位处理
+        var itemnum = $(".item2ul").children().length;
+        if(itemnum % 2){
+            $(".item2ul").append('<li class="item toproductlist"><a href="">了解更多>></a></li>');
+        }
+
+    });
+</script>
+</html>

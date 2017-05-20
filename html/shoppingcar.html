@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <title>购物车</title>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../js/commen.js"></script>
+    <script src="../lib/iscroll.js"></script>
+    <script src="../lib/layer_mobile/layer.js"></script>
+    <link rel="stylesheet" href="../lib/layer_mobile/need/layer.css">
+    <link rel="stylesheet" href="../icon-font/iconfont.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background-color: #fafafa;">
+<a name="top"></a>
+<div id="contain">
+    <header id="layout-head">
+        <div id="backbtn">
+            <a href="javascript:history.go(-1);">
+                <span class="icon iconfont icon-fanhui"></span>
+            </a>
+        </div>
+        <div>
+            购物车
+        </div>
+    </header>
+    <div id="layout-content">
+        <ul id="sc-main">
+            <li class="sc-item">
+                <div class="sc-editbar clear">
+                    <div class="chooseipt">
+                        <!--隐藏的input formipt用来提交表单数据 value=商品积分数*商品个数-->
+                        <input class="formipt" type="hidden" >
+                        <span class="chosecir icon iconfont icon-wuuiconxuan"></span>
+                    </div>
+                    <div class="delebtn" onclick="dodele(this)"><span class="">删除</span></div>
+                    <div class="editbtn" flag="1" onclick="doedit(this)"><span class="">编辑</span></div>
+                </div>
+                <div class="sc-infobox">
+                    <div class="sc-imgbox">
+                        <a href="productdetail.html">
+                            <img src="../images/pl-a01.jpg" alt="【京东超市】玉兰油Olay面霜多效修护50g（补水保湿 提拉紧致 减少皱纹 新老包装随机发货）">
+                        </a>
+                    </div>
+                    <div class="sc-textbox">
+                        <p class="product-tit"><a href="productdetail.html">玉兰油Olay面霜多效修护50g（补水保湿 提拉紧致 减少皱纹 新老包装随机发货）</a>【</p>
+                        <div class="sc-btnbox">
+                            <div class="clear">
+                                <div class="sc-points">
+                                    <span >119</span>分
+                                </div>
+                                <div class="chosenum hidden clear">
+                                    <span class="addbtn">+</span>
+                                    <input class="pnum" num="1" value="1" readonly="readonly" >
+                                    <span class="minbtn">-</span>
+                                </div>
+                                <div class="sc-pnumis">×<span class="sc-pnum">1</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="sc-item">
+                <div class="sc-editbar clear">
+                    <div class="chooseipt" >
+                        <input class="formipt" type="hidden">
+                        <span class="chosecir icon iconfont icon-wuuiconxuan" ></span>
+                    </div>
+                    <div class="delebtn" onclick="dodele(this)"><span class="">删除</span></div>
+                    <div class="editbtn" flag="1" onclick="doedit(this)"><span class="">编辑</span></div>
+                </div>
+                <div class="sc-infobox">
+                    <div class="sc-imgbox">
+                        <a href="">
+                            <img src="../images/pl-a02.jpg" alt="【买就送替换芯】柔色植物精华气垫CC霜bb霜15gX2保湿隔离粉底遮瑕控油裸 自然色">
+                        </a>
+                    </div>
+                    <div class="sc-textbox">
+                        <p class="product-tit">【买就送替换芯】柔色植物精华气垫CC霜bb霜15gX2保湿隔离粉底遮瑕控油裸 自然色</p>
+                        <div class="sc-btnbox">
+                            <div class="clear">
+                                <div class="sc-points">
+                                    <span>59</span>分
+                                </div>
+                                <div class="chosenum hidden clear">
+                                    <span class="addbtn">+</span>
+                                    <input class="pnum" num="1" value="1" readonly="readonly" >
+                                    <span class="minbtn">-</span>
+                                </div>
+                                <div class="sc-pnumis">×<span class="sc-pnum">1</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="sc-item">
+                <div class="sc-editbar clear">
+                    <div class="chooseipt" >
+                        <input class="formipt" type="hidden">
+                        <span class="chosecir icon iconfont icon-wuuiconxuan" ></span>
+                    </div>
+                    <div class="delebtn" onclick="dodele(this)"><span class="">删除</span></div>
+                    <div class="editbtn" flag="1" onclick="doedit(this)"><span class="">编辑</span></div>
+                </div>
+                <div class="sc-infobox">
+                    <div class="sc-imgbox">
+                        <a href="">
+                            <img src="../images/pl-a02.jpg" alt="【买就送替换芯】柔色植物精华气垫CC霜bb霜15gX2保湿隔离粉底遮瑕控油裸 自然色">
+                        </a>
+                    </div>
+                    <div class="sc-textbox">
+                        <p class="product-tit">【买就送替换芯】柔色植物精华气垫CC霜bb霜15gX2保湿隔离粉底遮瑕控油裸 自然色</p>
+                        <div class="sc-btnbox">
+                            <div class="clear">
+                                <div class="sc-points">
+                                    <span>59</span>分
+                                </div>
+                                <div class="chosenum hidden clear">
+                                    <span class="addbtn">+</span>
+                                    <input class="pnum" num="1" value="1" readonly="readonly" >
+                                    <span class="minbtn">-</span>
+                                </div>
+                                <div class="sc-pnumis">×<span class="sc-pnum">1</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="sc-edit">
+        <div id="sc-chooseall" >
+            <input type="hidden">
+            <span class="chosecir icon iconfont icon-wuuiconxuan" ></span>全选
+        </div>
+        <!--总计分数 和 总商品类数-->
+        <div id="sc-submitbtn">结算(<i>0</i>)</div>
+        <div id="sc-tottle">合计: <span>0</span>积分</div>
+    </div>
+</div>
+<script>
+
+    //结算input初始化
+    setcalc();
+    function setcalc(){
+        $(".chooseipt").each(function (index,ele) {
+            var opints = Number($(ele).parent().siblings().find(".sc-points >span").html());
+            var onumbs = Number($(ele).parent().siblings().find(".pnum").attr("value"));
+            $(this).children("input").val(opints * onumbs);
+        })
+    }
+    //刷新页面进行结算
+    resetcalc();
+    function resetcalc(){
+        var lilen = $(".sc-item").length;
+        if(lilen == 0){
+            $("#sc-main").append("<li class='sc-link'><a href=''>购物车空空的,去选购商品>></a></li>")
+        }else{
+            $("#sc-main").find(".sc-link").addClass("hidden");
+        };
+        var len = $(".sc-item").find(".active").length;
+        if($(".sc-item").length == len){
+            $("#sc-chooseall").children("span").addClass("active");
+        }
+        $("#sc-submitbtn > i").html(len);
+        var result = 0;
+        $(".active").each(function (index,ele) {
+            result += Number($(ele).siblings("input").val());
+        });
+        $("#sc-tottle > span").html(result);
+    }
+
+
+    //编辑商品数量
+    function  doedit(obj) {
+        var ppoints = Number($(obj).parent().siblings().find(".sc-points >span").html());
+        var flag = Number($(obj).attr("flag"));
+        if(flag){
+            $(obj).children("span").html("完成");
+            $(obj).attr("flag", 0);
+        }else{
+            $(obj).children("span").html("编辑");
+            var pnum = $(obj).parent().siblings().find(".pnum").val();
+            $(obj).parent().siblings().find(".sc-pnum").html(pnum);
+            $(obj).siblings(".chooseipt").children("input").val(ppoints * pnum );
+            resetcalc();
+            $(obj).attr("flag", 1);
+        }
+        $(obj).parent().siblings().find(".chosenum").toggleClass("hidden");
+        $(obj).parent().siblings().find(".sc-points").toggleClass("hidden");
+        $(obj).parent().siblings().find(".sc-pnumis").toggleClass("hidden");
+    };
+
+
+
+    //删除对应商品
+    function dodele(obj) {
+        var ele = $(obj).parent().parent();
+        var flag = false;
+        layer.open({
+            content: '您确定要删除吗？'
+            ,btn: ['删除', '取消']
+            ,yes: function(index){
+                $(ele).remove();
+                resetcalc();
+                layer.close(index);
+            }
+        });
+    };
+
+    //商品选中
+    $(".chooseipt").click(function () {
+        if($(this).children().hasClass("active")){
+            $(this).children("span").removeClass("active").addClass("noit");
+            noitfn();
+            resetcalc();
+        }else{
+            $(this).children("span").addClass("active").removeClass("noit");
+            noitfn();
+            resetcalc();
+        }
+    });
+
+    //全选
+    $("#sc-chooseall").click(function () {
+        if($(this).children().hasClass("active")){
+            $(this).children("span").removeClass("active");
+            $(".chosecir").removeClass("active");
+            resetcalc();
+        }else{
+            $(this).children("span").addClass("active");
+            $(".chosecir").addClass("active");
+            resetcalc();
+        }
+    });
+
+    //取消全选
+    function  noitfn() {
+        $(".sc-item").each(function (index,ele) {
+            if($(ele).find(".noit")){
+                $("#sc-chooseall").children("span").removeClass("active");
+            }
+        })
+    }
+</script>
+<script>
+    $(function () {
+        //商品数量加减
+        var minnum = $(".minbtn");
+        var addnum = $(".addbtn");
+
+        addnum.click(function () {
+            var ipt = $(this).siblings("input");
+            var num = parseInt($(ipt).attr("num"));
+            num++;
+            $(ipt).attr("num",num);
+            minnum.css("color", "");
+            $(ipt).attr("value" , num);
+        });
+        minnum.click(function () {
+            var ipt = $(this).siblings("input");
+            var num = parseInt($(ipt).attr("num"));
+            num --;
+            if( num == 0){
+                $(this).css("color", "red");
+                num++;
+            }else{
+                $(this).css("color", "");
+                $(ipt).attr("num", num);
+                $(ipt).attr("value", num);
+            }
+        });
+
+        $("#pl-main").find("input").change(function () {
+            var m = $(this).val() > 0 ? $(this).val() : 1;
+            $(this).val(m);
+            $(this).attr("num" , m);
+        });
+    })
+</script>
+</body>
+</html>

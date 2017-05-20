@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <title>管理收货地址</title>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../js/commen.js"></script>
+    <script src="../lib/layer_mobile/layer.js"></script>
+    <link rel="stylesheet" href="../lib/layer_mobile/need/layer.css">
+    <link rel="stylesheet" href="../icon-font/iconfont.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="address">
+<a name="top"></a>
+<div id="contain">
+    <header id="layout-head">
+        <div id="backbtn">
+            <a href="javascript:history.go(-1);">
+                <span class="icon iconfont icon-fanhui"></span>
+            </a>
+        </div>
+        <div>
+            管理收货地址
+        </div>
+    </header>
+    <div id="layout-content">
+        <ul id="address-main">
+            <li class="a-item">
+                <div class="a-info">
+                    <div class="clear">
+                        <span class="name">lilisa</span>
+                        <span class="phone">13898987878</span>
+                    </div>
+                    <div class="address">
+                        广东省深圳市高新技术产业园南区科技南十二路2号金蝶软件园
+                    </div>
+                </div>
+                <div class="a-editbar clear">
+                    <div class="choosebtn">
+                        <span class="icon iconfont icon-wuuiconxuan"></span>设为默认
+                    </div>
+                    <div class="dele" onclick="dodele(this)">
+                        <span class="icon iconfont icon-iconfontshanchu"></span>删除
+                    </div>
+                    <div class="edit">
+                        <a href="editaddress.html">
+                            <span class="icon iconfont icon-bianji1"></span>编辑
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="a-item">
+                <div class="a-info">
+                    <div class="clear">
+                        <span class="name">lilisa</span>
+                        <span class="phone">13898987878</span>
+                    </div>
+                    <div class="address">
+                        广东省深圳市高新技术产业园南区科技南十二路2号金蝶软件园
+                    </div>
+                </div>
+                <div class="a-editbar clear">
+                    <div class="choosebtn">
+                        <span class="icon iconfont icon-wuuiconxuan"></span>设为默认
+                    </div>
+                    <div class="dele" onclick="dodele(this)">
+                        <span class="icon iconfont icon-iconfontshanchu"></span>删除
+                    </div>
+                    <div class="edit">
+                        <a href="editaddress.html">
+                            <span class="icon iconfont icon-bianji1"></span>编辑
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <a href="editaddress.html">
+            <div class="a-addnew">
+                <span class="icon iconfont icon-add1"></span>新增地址
+            </div>
+        </a>
+    </footer>
+</div>
+
+<script>
+    //选择默认地址
+    $(function () {
+        $(".choosebtn").click(function () {
+            if($(this).children(".icon").hasClass("active")){
+                $(this).children(".icon").removeClass("active");
+            }else{
+                $(".choosebtn").children(".icon").removeClass("active");
+                $(this).children(".icon").addClass("active");
+            }
+
+        })
+    });
+
+    //删除选中地址
+    function dodele(obj) {
+        var ele = $(obj).parent().parent();
+        var flag = false;
+        layer.open({
+            content: '您确定要删除吗？'
+            ,btn: ['删除', '取消']
+            ,yes: function(index){
+                $(ele).remove();
+                layer.close(index);
+            }
+        });
+    };
+</script>
+</body>
+</html>

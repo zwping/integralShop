@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <title>请登录</title>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../js/commen.js"></script>
+    <script src="../lib/layer_mobile/layer.js"></script>
+    <link rel="stylesheet" href="../lib/layer_mobile/need/layer.css">
+    <link rel="stylesheet" href="../icon-font/iconfont.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="login">
+<a name="top"></a>
+<div id="contain">
+    <header id="layout-head">
+        <div id="backbtn">
+            <a href="javascript:history.go(-1);">
+                <span class="icon iconfont icon-fanhui"></span>
+            </a>
+        </div>
+        <div>
+            登录
+        </div>
+    </header>
+    <div id="layout-content">
+        <div class="login-tit">
+            登录
+        </div>
+        <div id="login-info">
+            <div>
+                <span class="icon iconfont icon-person"></span>
+                <input name="uname" type="text" placeholder="昵称">
+            </div>
+            <div>
+                <span class="icon iconfont icon-mima"></span>
+                <input name="psw" type="text" placeholder="请输入密码">
+            </div>
+        </div>
+        <div class="login-btn">
+            <a href="">
+                积分兑换,马上体验 <span class="icon iconfont icon-shou"></span>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    $("input").focus(function () {
+        $(this).prop("placeholder","");
+    });
+    $("input[name = 'uname']").blur(function () {
+        if(!$(this).val() || $(this).val() == ' '){
+            $(this).prop("placeholder","昵称");
+        }
+    });
+    $("input[name = 'psw']").blur(function () {
+        if(!$(this).val() || $(this).val() == ' '){
+            $(this).prop("placeholder","请输入密码");
+        }
+    });
+</script>
+</body>
+</html>
